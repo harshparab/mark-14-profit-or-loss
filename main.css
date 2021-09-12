@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --primary-color: #070707;
+    --secondary-color: #ffffff;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 0px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.heading{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+label {
+    display: block; 
+    font-size: large;
+     
+}
+
+#initial-price{
+    margin-bottom: 3rem ;
+    font-size: large;
+}
+
+#stocks-quantity{
+    margin-bottom: 3rem ;
+    font-size: large;
+}
+
+#current-price{
+    margin-bottom: 3rem;
+    font-size: large;
+
+}
+
+
+button{
+   margin: auto;
+    display: block;
+    font-size: large;
+    padding: 1rem;
+    background-color: #F59E0B;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#output-box{
+    margin-top: 5rem;
+    font-size: xx-large;
+    color:blue
+}

@@ -38,9 +38,16 @@ function calculateProfitAndLoss(initial, quantity, current){
         const profitPercentage = (profit/quantity)*100
 
         showOutput(`The profit is ${profit} and the profit percentage is ${profitPercentage}%.`)
-    }else {
+    }
+    else if(initial === current){
         showOutput(`No profit, No loss.`)
     }
+    
+    else if(initial === current === 0){
+        showOutput(`Please enter the values.`)
+    }
+
+    
 }
 
 

@@ -28,16 +28,16 @@ function alertMessage() {
 
 function calculateProfitAndLoss(initial, quantity, current){
     if (initial > current){
-        const loss = (initial - current)/ quantity 
-        const lossPercentage = (loss/quantity)*100
+        const loss = (initial - current)* quantity 
+        const lossPercentage = (loss/initial)*100
 
-        showOutput(`The loss is ${loss} and the loss percentage is ${lossPercentage}%.`)
+        showOutput(`The loss is ${loss} and the loss percentage is ${lossPercentage.toFixed(2)}%.`)
 
     }else if(initial < current){
-        const profit = (current - initial)/quantity
-        const profitPercentage = (profit/quantity)*100
+        const profit = (current - initial)* quantity
+        const profitPercentage = (profit/initial)*100
 
-        showOutput(`The profit is ${profit} and the profit percentage is ${profitPercentage}%.`)
+        showOutput(`The profit is ${profit} and the profit percentage is ${profitPercentage.toFixed(2)}%.`)
     }
     else if(initial === current){
         showOutput(`No profit, No loss.`)

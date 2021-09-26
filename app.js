@@ -43,11 +43,7 @@ function calculateProfitAndLoss(initial, quantity, current){
         showOutput(`No profit, No loss.`)
     }
     
-    else if(initial === current === 0){
-        showOutput(`Please enter the values.`)
-    }
 
-    
 }
 
 
